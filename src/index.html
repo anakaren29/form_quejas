@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ </head>
+
+<body>
+    <div class="container" style="padding: 50px;">
+        <div class="row">
+          
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              
+                <form role="form">
+                  <h2 style="text-align: center;">Contacto con la Subsecretaría de Educación Media Superior</h2>
+                    <div class="form-group">
+                        <label for="perfil">Perfil:</label><br>
+                        <select name="perfil">
+                            <option value="value1">Estudiante</option>
+                            <option value="value2">Docente</option>
+                            <option value="value3">Padre, madre, tutor o responsable del estudiante</option>
+                            <option value="value2">Otro</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado:</label><br>
+                        <select name="perfil">
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja California">Baja California</option>
+                            <option value="Baja California Sur">Baja California Sur</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Ciudad de México">Ciudad de México</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Colima">Colima</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Estado de México">Estado de México</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="San Luis Potosí">San Luis Potosí</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
+
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Subsistema de Educación Media Superior:</label><br>
+                        <select name="subsistema">
+                            <option value="value1">Colegio de Bachilleres</option>
+                            <option value="value2">CCH</option>
+                            <option value="value3">Conalep</option>
+                          </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="">Nombre del plantel:</label><br>
+                        <input class="form-control" placeholder="" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label  for="">¿Deseas compartir tus datos de contacto? </label><br>
+                          <input type="radio" name="datos" value="si" id="opcion_si"> Si <br>
+                          <input type="radio" name="datos" value="no" id="opcion_no"> No
+                      </div>
+
+                      <!-- Despligue para agregar datos de contacto -->
+                      <div class="form-group col-md-6" id="div_datos" style="display: none;">
+                        <label for="">Nombre completo:</label><br>
+                        <input class="form-control" placeholder="" type="text">
+
+                        <label for="">Telefono:</label><br>
+                        <input class="form-control" placeholder="" type="number">
+
+                        <label for="">Dirección de correo:</label><br>
+                        <input class="form-control" placeholder="" type="email">
+                     </div>
+
+
+                      <div class="form-group">
+                        <label for="">¿Cuál es el nombre de la persona que cometió la omisión de sus deberes o la conducta indebida?</label><br>
+                        <input class="form-control" placeholder="" type="text">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">¿Qué cargo ocupa como autoridad local o como directivo de plantel?</label><br>
+                        <input class="form-control" placeholder="" type="text">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">¿La omisión de sus deberes o la conducta indebida es constante o fue por única vez? </label><br>
+                        <input class="form-control" placeholder="" type="text">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">¿Cuándo fue la última que omitió sus deberes o realizó la conducta indebida? </label><br>
+                        <input class="form-control" placeholder="" type="date">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">¿Quién o quiénes fueron las personas afectadas? </label><br>
+                        <input class="form-control" placeholder="" type="text">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="">Describe la omisión de sus deberes o la conducta indebida</label><br>
+                        <input class="form-control control" placeholder="aqui" type="text">
+                      </div>
+
+                      <div class="form-group">
+                            <label for="">¿Deseas aportar alguna evidencia?</label><br>
+                                <input type="radio" name="evidencia" value="opcion-02" id="cargar_si"> Si <br>
+                                <input type="radio" name="evidencia" value="opcion-02" id="cargar_no"> No
+                      </div>
+
+                      <!-- seccion para cargar archivos -->
+                      <div class="form-group col-md-6" id="div_upload" style="display: none;">
+                        <label for="InputFile">Cargar evidencia</label>
+                        <input type="file" id="loadFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                      </div>   
+
+                      <div class="form-group">
+                        <button class="btn btn-primary pull-right" type="submit">Enviar</button><br><br>
+                      </div> 
+
+                      <p style="text-align: justify; margin-top: 30px;">Los datos personales que proporciones serán tratados de manera confidencial, no se compartirán con las personas involucradas, consulta el aviso de privacidad. Si compartiste tus datos de contacto se te podría buscar en caso de requerir más información y para dar seguimiento a tu queja o denuncia. Si deseas comunicarte a la SEMS llama al 55 3601 1000 extensión 50652 o escribe a atencion.sems@sems.gob.mx.</p>
+                </form>
+            </div>
+
+            <div class="col-md-2"></div>
+            
+        </div>  
+      </div>   
+  
+    
+ <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script> 
+ <script src="/js/index.js"></script>   
+</body>
+</html>
