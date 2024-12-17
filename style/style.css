@@ -1,30 +1,9 @@
-.control {
-    padding: 0.28125rem 0;
-    line-height: 1.5;
-    background: no-repeat bottom, 50% calc(100% - 1px);
-    background-size: 0 100%, 100% 100%;
-    border: 0;
-    display: block;
-    width: 100%;
-    font-size: 16px;
-    color: #495057;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: visible;
-    margin: 0;
-    font-family: inherit;
-    cursor: text;
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    text-align: start;
-    outline: 0px;
-    margin-bottom: 25px;
-    background-image: linear-gradient(0deg, #d38318 2px, rgba(63, 81, 181, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, white 0);
-    transition: background-size 0.3s ease-out;
+.ocultar{
+    display: none;
+}
+
+body{
+    background-color: palevioletred;
 }
 
 

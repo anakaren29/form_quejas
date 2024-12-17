@@ -5,23 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulario</title>
+    <link rel="stylesheet" href="/style/style.css">
     <link href="/favicon.ico" rel="shortcut icon">
     <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
  </head>
-
+ <style>
+  .form-control{
+    padding: 0.28125rem 0;
+    line-height: 1.5;
+    background: no-repeat bottom, 50% calc(100% - 1px);
+    background-size: 0 100%, 100% 100%;
+    border: 0;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #495057;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+    margin: 0;
+    font-family: inherit;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    outline: 0px;
+    margin-bottom: 25px;
+    background-image: linear-gradient(0deg, #d38318 2px, rgba(63, 81, 181, 0) 0), linear-gradient(0deg, rgba(0, 0, 0, 0.26) 1px, white 0);
+    transition: background-size 0.3s ease-out;
+  }
+  .form-control:focus {
+  background-size: 100% 100%, 100% 100%;
+  transition-duration: 0.3ms;
+  outline: 0px;
+  box-shadow: none;
+}
+ </style>
 <body>
     <div class="container" style="padding: 50px;">
         <div class="row">
           
             <div class="col-md-2"></div>
-            <div class="col-md-8">
-              
+            <div class="col-md-8">           
                 <form role="form">
                   <h2 style="text-align: center;">Contacto con la Subsecretaría de Educación Media Superior</h2>
                     <div class="form-group">
                         <label for="perfil">Perfil:</label><br>
-                        <select name="perfil">
+                        <select class="form-control" name="perfil">
                             <option value="value1">Estudiante</option>
                             <option value="value2">Docente</option>
                             <option value="value3">Padre, madre, tutor o responsable del estudiante</option>
@@ -31,7 +66,7 @@
 
                     <div class="form-group">
                         <label for="estado">Estado:</label><br>
-                        <select name="perfil">
+                        <select class="form-control" name="perfil">
                             <option value="Aguascalientes">Aguascalientes</option>
                             <option value="Baja California">Baja California</option>
                             <option value="Baja California Sur">Baja California Sur</option>
@@ -70,10 +105,38 @@
 
                     <div class="form-group">
                         <label for="">Subsistema de Educación Media Superior:</label><br>
-                        <select name="subsistema">
-                            <option value="value1">Colegio de Bachilleres</option>
-                            <option value="value2">CCH</option>
-                            <option value="value3">Conalep</option>
+                        <select class="form-control" name="subsistema">
+                            <option value="">Bachillerato de Educación Tecnológica Agropecuaria y Ciencias del Mar (DGETAyCM)</option>
+                            <option value="">Bachillerato de Educación Tecnológica Industrial y de Servicios (DGETI)</option>
+                            <option value="">Bachillerato General (DGB)</option>
+                            <option value="">Bachillerato Tecnológico de Educación y Promoción Deportiva (DGBTED)</option>
+                            <option value="">Centro de Enseñanza Técnica Industrial (CETI)</option>
+                            <option value="">Colegio de Bachilleres (COLBACH)</option>
+                            <option value="">Colegio de Bachilleres estatales (COBACH)</option>
+                            <option value="">Colegio Nacional de Educación Profesional (CONALEP-CDMX-OAX)</option>
+                            <option value="">Colegio Nacional de Educación Profesional (Estatal)</option>
+                            <option value="">Prepa en Línea-SEP</option>
+                            <option value="">Bachillerato en Línea Estatal</option>
+                            <option value="">Bachillerato de Universidades Públicas Autónomas</option>
+                            <option value="">Bachillerato Estatal</option>
+                            <option value="">Bachillerato Intercultural Bilingüe</option>
+                            <option value="">Centro de Bachillerato de Desarrollo Comunitario</option>
+                            <option value="">Colegio de Estudios Científicos y Tecnológicos (CECyTE)</option>
+                            <option value="">Educación Media Superior a Distancia (EMSaD)</option>
+                            <option value="">Escuela Nacional para Ciegos</option>
+                            <option value="">Instituto de Educación Media Superior (IEMS)</option>
+                            <option value="">Instituto Nacional de Bellas Artes y Literatura</option>
+                            <option value="">Instituto Politécnico Nacional (IPN)</option>
+                            <option value="">Institutos Estatales de Bellas Artes</option>
+                            <option value="">Prepa Abierta Estatal</option>
+                            <option value="">Preparatorias Estatales por Cooperación (PREECO)</option>
+                            <option value="">Preparatorias Federales por Cooperación (PREFECO)</option>
+                            <option value="">Secretaría de Educación, Ciencia, Tecnología e Innovación de la CDMX</option>
+                            <option value="">Telebachillerato</option>
+                            <option value="">Telebachillerato Comunitario</option>
+                            <option value="">Bachillerato particular</option>
+                            <option value="">Otras Secretarías</option>
+                            <option value="">Otros programas estatales</option>
                           </select>
                     </div>
                     
@@ -89,14 +152,14 @@
                       </div>
 
                       <!-- Despligue para agregar datos de contacto -->
-                      <div class="form-group col-md-6" id="div_datos" style="display: none;">
+                      <div class="form-group" id="div_datos" style="display: none;">
                         <label for="">Nombre completo:</label><br>
                         <input class="form-control" placeholder="" type="text">
 
-                        <label for="">Telefono:</label><br>
+                        <label for="">Teléfono:</label><br>
                         <input class="form-control" placeholder="" type="number">
 
-                        <label for="">Dirección de correo:</label><br>
+                        <label for="">Dirección de correo electrónico:</label><br>
                         <input class="form-control" placeholder="" type="email">
                      </div>
 
@@ -137,21 +200,74 @@
                                 <input type="radio" name="evidencia" value="opcion-02" id="cargar_no"> No
                       </div>
 
-                      <!-- seccion para cargar archivos -->
-                      <div class="form-group col-md-6" id="div_upload" style="display: none;">
-                        <label for="InputFile">Cargar evidencia</label>
-                        <input type="file" id="loadFile">
-                        <p class="help-block">Example block-level help text here.</p>
-                      </div>   
+                      <!-- seccion para solicitar tipo de archivos a cargar-->
+                      <div class="form-group" id ="div_upload" style="display: none;">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h3 class="panel-title">Carga de Archivos</h3>
+                          </div>
+                          
+                          <div class="panel-body">
+                              <div class="upload-section">
+                                  <form id="uploadForm" enctype="multipart/form-data">
+                                      <div class="form-group">
+                                          <label for="fileInput" class="file-input-label">Seleccionar archivo:</label>
+                                          <input 
+                                              type="file" 
+                                              class="form-control"
+                                              id="fileInput" 
+                                              name="archivo"
+                                              accept=".txt,.doc,.docx,.jpg,.jpeg,.png,.bmp,.tiff,.mp3,.wav,.pdf,.mov,.mp4,.mpg,.avi,.wmv"
+                                          >
+                                      </div>
+                                  </form>
+      
+                                  <div class="well well-sm">
+                                      <h4><small>Límites de tamaño por tipo de archivo:</small></h4>
+                                      <ul class="list-unstyled">
+                                          <li><span class="glyphicon glyphicon-file"></span> Textos (txt, doc, docx): 1 MB</li>
+                                          <li><span class="glyphicon glyphicon-picture"></span> Imágenes y audio (jpg, jpeg, png, bmp, tiff, mp3, wav): 2 MB</li>
+                                          <li><span class="glyphicon glyphicon-film"></span> PDF y videos (pdf, mov, mp4, mpg, avi, wmv): 20 MB</li>
+                                      </ul>
+                                  </div>
+      
+                                  <div id="fileInfo" class="alert alert-info" style="display: none">
+                                      <h4>Archivo seleccionado:</h4>
+                                      <dl class="dl-horizontal">
+                                          <dt>Nombre:</dt>
+                                          <dd id="fileName"></dd>
+                                          <dt>Tamaño:</dt>
+                                          <dd id="fileSize"></dd>
+                                          <dt>Tipo:</dt>
+                                          <dd id="fileType"></dd>
+                                      </dl>
+                                  </div>
+      
+                                  <div id="errorMessage" class="alert alert-danger" style="display: none">
+                                      <span class="glyphicon glyphicon-exclamation-sign"></span>
+                                      <span class="message"></span>
+                                  </div>
+      
+                                  <div id="successMessage" class="alert alert-success" style="display: none">
+                                      <span class="glyphicon glyphicon-ok"></span>
+                                      Archivo válido para cargar
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
 
                       <div class="form-group">
                         <button class="btn btn-primary pull-right" type="submit">Enviar</button><br><br>
                       </div> 
-
-                      <p style="text-align: justify; margin-top: 30px;">Los datos personales que proporciones serán tratados de manera confidencial, no se compartirán con las personas involucradas, consulta el aviso de privacidad. Si compartiste tus datos de contacto se te podría buscar en caso de requerir más información y para dar seguimiento a tu queja o denuncia. Si deseas comunicarte a la SEMS llama al 55 3601 1000 extensión 50652 o escribe a atencion.sems@sems.gob.mx.</p>
+ 
+                      <div class="form-group">
+                        <p style="text-align: justify; margin-top: 40px;">Los datos personales que proporciones serán tratados de manera confidencial, no se compartirán con las personas involucradas, consulta el aviso de privacidad. Si compartiste tus datos de contacto se te podría buscar en caso de requerir más información y para dar seguimiento a tu queja o denuncia. Si deseas comunicarte a la SEMS llama al 55 3601 1000 extensión 50652 o escribe a atencion.sems@sems.gob.mx.</p>
+                      </div>
                 </form>
+                
             </div>
-
+            
             <div class="col-md-2"></div>
             
         </div>  
